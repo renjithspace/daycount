@@ -9,12 +9,14 @@ import  moment from 'moment'
 })
 export class HomePage {
 	start = ""
-	end = ""
+	days:number
   result = ""
 
   constructor(public navCtrl: NavController) {}
 
   count() {
-  	this.result = moment(this.end).diff(this.start, 'days')
+    if (!this.start || !this.days) return
+  	var result = moment(this.start).add(this.days, 'days')
+    this.result = moment(result).format('Do MMM YYYY')
   }
 }

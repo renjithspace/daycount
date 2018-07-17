@@ -7,16 +7,16 @@
 <ion-content padding>
 	<ion-item>
 		<ion-label color="primary">Start</ion-label>
-		<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="start" (ionChange)="count()"></ion-datetime>
+		<ion-datetime displayFormat="MMM/DD/YYYY" [(ngModel)]="start" (ionChange)="count()"></ion-datetime>
 	</ion-item>
 	<ion-item>
-		<ion-label color="primary">End</ion-label>
-		<ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="end" (ionChange)="count()"></ion-datetime>
+		<ion-label color="primary">Days</ion-label>
+		<ion-input type="number" [(ngModel)]="days" (ionChange)="count()"></ion-input>
 	</ion-item>
 </ion-content>
 
 <ion-footer *ngIf="result">
   <ion-toolbar>
-    <ion-title text-center>{{ result }} days</ion-title>
+    <ion-title text-center>{{ result }}</ion-title>
   </ion-toolbar>
 </ion-footer>
