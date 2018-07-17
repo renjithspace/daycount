@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.vaaip.daycount" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Daycount</name>
-    <description>Count days between dates</description>
+<widget id="com.vaaip.lalu" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Lalu</name>
+    <description>Date finder app</description>
     <author email="hello@vaaip.com" href="https://vaaip.com/">Vaaip</author>
     <content src="index.html" />
     <access origin="*" />
