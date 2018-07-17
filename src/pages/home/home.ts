@@ -10,11 +10,11 @@ import  moment from 'moment'
 export class HomePage {
 	start = ""
 	end = ""
+  result = ""
 
   constructor(public navCtrl: NavController) {}
 
   count() {
-  	if (!this.result && !this.end) return
   	this.result = moment(this.end).diff(this.start, 'days')
   }
 }
